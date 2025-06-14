@@ -10,7 +10,88 @@ import "../styles/global.css";
 		<meta name="generator" content={Astro.generator} />
 		<title>Screenlite</title>
 	</head>
-	<body>
-		<h1>Screenlite</h1>
+	<body
+		class="min-h-screen bg-gradient-to-br from-black via-gray-900 to-gray-950 text-white font-sans antialiased flex items-center justify-center p-6"
+	>
+		<div class="w-full max-w-3xl space-y-8">
+			<!-- Hero -->
+			<header class="text-center space-y-4">
+				<h1
+					class="text-5xl sm:text-6xl font-extrabold bg-gradient-to-r from-cyan-400 to-purple-500 text-transparent bg-clip-text drop-shadow-[0_2px_4px_rgba(0,0,0,0.4)]"
+				>
+					Screenlite
+				</h1>
+				<p class="text-xl text-gray-300 max-w-lg mx-auto">
+					Open-source digital signage software.
+				</p>
+			</header>
+
+			<!-- Cards Section -->
+			<section class="grid sm:grid-cols-2 gap-6">
+				<!-- GitHub -->
+				<a
+					href="https://github.com/screenlite/screenlite"
+					target="_blank"
+					class="group relative p-6 rounded-2xl bg-white/5 border border-white/10 shadow-xl backdrop-blur hover:scale-105 transition transform duration-300"
+				>
+					<div class="text-lg font-semibold text-cyan-300">
+						💾 GitHub Repository
+					</div>
+					<p class="text-gray-400 text-sm mt-2">
+						Star the repo to support the project and follow its
+						progress.
+					</p>
+					<div
+						class="absolute right-4 bottom-4 text-cyan-500 group-hover:translate-x-1 transition-transform"
+					>
+						→
+					</div>
+				</a>
+
+				<!-- Discord -->
+				<a
+					href="https://discord.gg/2wW8zDjAjr"
+					target="_blank"
+					class="group relative p-6 rounded-2xl bg-white/5 border border-white/10 shadow-xl backdrop-blur hover:scale-105 transition transform duration-300"
+				>
+					<div class="text-lg font-semibold text-violet-300">
+						💬 Join our Discord
+					</div>
+					<p class="text-gray-400 text-sm mt-2">
+						Connect with the community and get updates directly.
+					</p>
+					<div
+						class="absolute right-4 bottom-4 text-violet-400 group-hover:translate-x-1 transition-transform"
+					>
+						→
+					</div>
+				</a>
+			</section>
+
+			<!-- Alert / Notice -->
+			<div
+				class="text-sm text-orange-400 border border-orange-500/30 p-4 rounded-lg bg-orange-500/5 backdrop-blur-sm shadow-md"
+			>
+				⚠️ Screenlite is in early development and not yet
+				production-ready. Expect rapid changes.
+			</div>
+
+			<!-- License -->
+			<div class="text-center text-gray-400 text-sm">
+				Licensed under the
+				<a
+					href="https://github.com/screenlite/screenlite/blob/main/LICENSE.md"
+					class="text-cyan-400 underline hover:text-cyan-300"
+					>MIT License</a
+				>.
+			</div>
+
+			<!-- Footer -->
+			<footer
+				class="text-xs text-gray-600 text-center pt-6 border-t border-white/10"
+			>
+				&copy; 2025 Screenlite ✨
+			</footer>
+		</div>
 	</body>
 </html>
